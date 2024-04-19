@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conclusion - Data Showdown</title>
+    <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Container styles */
+        .container {
+            display: flex;
+        }
+
+        /* Navigation styles */
+        nav {
+            background-color: #333;
+            color: #fff;
+            width: 200px; /* Width of the navigation */
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin-bottom: 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            padding: 8px;
+            border-radius: 4px;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        /* Main content styles */
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        header {
+            background-color: #8ED1E9; 
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Comparing machine learning performance on Big Query(SQL), Azure and Python</h1>
+    </header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Intro</a></li>
+                <li><a href="des.html">Tools Used</a></li>
+                <li><a href="meth.html">Method</a></li>
+                <li><a href="res.html">Result</a></li>
+                <!--<li><a href="cod.html">Codes</a></li>-->
+                <li><a href="con.html">Conclusion</a></li>
+                <li><a href="about.html">Contributors</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <h2>Conclusion</h2>
+                <!-- Content for the Conclusion page goes here -->
+                <p> Overall, linear regression models provided the most consistent and higher R-squared values across platforms, especially in BigQuery and Azure. XGBoost and LightGBM had varied performances, with generally lower R-squared values compared to linear regression, except in Python where XGBoost performed fairly well. The results indicate that the choice of platform and the implementation specifics (SQL vs. Python) can significantly impact model performance. Also it should be noted that azure doesn’t have the XGboost library while Big Query(SQL) doesn’t have the lightGBM library which were the key limitations of this study. Even though these platforms might give convenience according to their respected ecosystem, for consistency we would recommend python overall. It is also important to note that future updates could impact the sustainability of our chosen platform. Python's rich ecosystem and active community make it a solid choice for machine learning projects, but careful consideration should be given to platform-specific limitations and dependencies.
+                </p>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>

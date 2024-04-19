@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results - Data Showdown</title>
+    <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Container styles */
+        .container {
+            display: flex;
+        }
+
+        /* Navigation styles */
+        nav {
+            background-color: #333;
+            color: #fff;
+            width: 200px; /* Width of the navigation */
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin-bottom: 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            padding: 8px;
+            border-radius: 4px;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        /* Main content styles */
+        .main-content {
+            padding: 20px;
+        }
+
+        header {
+            background-color: #8ED1E9; 
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-bottom: 20px;
+        }
+
+        /* Results specific styles */
+        .result {
+            margin-bottom: 20px;
+        }
+
+        .result h3 {
+            margin-bottom: 10px;
+        }
+
+        .result p {
+            margin-bottom: 10px;
+        }
+
+        .popup-btn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+
+        .popup-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .popup {
+            display: none;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            padding: 20px;
+            z-index: 9999;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 80%;
+            max-height: 80%;
+            overflow: auto;
+        }
+
+        .popup-content {
+            max-height: 100%;
+        }
+
+        .close-btn {
+            background-color: #dc3545;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+
+        .close-btn:hover {
+            background-color: #bd2130;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Comparing machine learning performance on Big Query(SQL), Azure and Python</h1>
+    </header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Intro</a></li>
+                <li><a href="des.html">Tools Used</a></li>
+                <li><a href="meth.html">Method</a></li>
+                <li><a href="res.html">Result</a></li>
+               <!-- <li><a href="cod.html">Codes</a></li>-->
+                <li><a href="con.html">Conclusion</a></li>
+                <li><a href="about.html">Contributors</a></li>
+            </ul>
+        </nav>
+        <div class="main-content">
+            <h2>Result Section</h2>
+            <p>Linear regression on Big Query(SQL) achieved the highest R-squared value of 0.6648, followed by azure which achieved an R-squared value of 0.6639 . Python(scikit-learn) achieved the lowest r-squared of 0.6460 . 
+                XGboost on python achieved the highest r-squared value of 0.6559 while Big Query(SQL) achieved 0.5313 . Azure was unable to apply XGboost as it does not support the library.
+                lightGBM on python achieved the highest r-squared value of 0.6366 while Azure achieved an value of 0.6307 . Big Query was not able to produce any score of lightGBM as it does not support it natively.
+                SO for better flexibility and performance, it is better to use python for XGBoost and lightGBM rather than using big query(sql) and azure. If we really want to focus on linear regression then we may use sql on big query even though python and big query(sql) have very similar results.
+                </p>
+           
+</body>
+
+</html>

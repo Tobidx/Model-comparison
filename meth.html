@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methodology - Data Showdown</title>
+    <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Container styles */
+        .container {
+            display: flex;
+        }
+
+        /* Navigation styles */
+        nav {
+            background-color: #333;
+            color: #fff;
+            width: 200px; /* Width of the navigation */
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin-bottom: 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            padding: 8px;
+            border-radius: 4px;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        /* Main content styles */
+        .main-content {
+            padding: 20px;
+        }
+
+        header {
+            background-color: #8ED1E9; 
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Comparing machine learning performance on Big Query(SQL), Azure and Python</h1>
+    </header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Intro</a></li>
+                <li><a href="des.html">Tools Used</a></li>
+                <li><a href="meth.html">Method</a></li>
+                <li><a href="res.html">Result</a></li>
+               <!--<li><a href="cod.html">Codes</a></li>-->
+                <li><a href="con.html">Conclusion</a></li>
+                <li><a href="about.html">Contributors</a></li>
+            </ul>
+        </nav>
+        <div class="main-content">
+            <h2>Method Used</h2>
+            <!-- Content for the Methodology page goes here -->
+            <p>The study explores the application of various machine learning models on a housing prices dataset obtained from Kaggle. The dataset contains 546 rows and 13 columns, including features like price, area, bedrooms, bathrooms, etc. The models are implemented and compared on different platforms including Google BigQuery, Azure Machine Learning Studio, and JupyterNotebook.
+
+                In Google BigQuery, Linear Regression and XGBoost models are applied, but LightGBM is not available. In Azure Machine Learning Studio, Linear Regression is implemented, but XGBoost is not directly available. For LightGBM, a similar approach to XGBoost is used with some modifications in preprocessing.
+            </p>    
+            <p>In AWS SageMaker, attempts are made to deploy the XGBoost regression model, but the process encounters difficulties and ultimately fails. The steps involve preparing model files, uploading to Amazon S3, building a Docker image, creating a SageMaker model, configuring an endpoint, and deploying it. Despite efforts, the deployment is unsuccessful.
+                
+                Following the failure on AWS SageMaker, the study attempts to utilize Google Cloud Platform's Vertex AI for deployment but faces similar challenges in deploying the model to the endpoint. The steps involved in preparing the model files, creating a Docker image, and running a Flask app are mentioned, but the deployment process remains unsuccessful.
+                
+                Overall, the study presents efforts to implement machine learning models on different platforms for housing price prediction, encountering challenges primarily in the deployment phase on both AWS SageMaker and GCP Vertex AI.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

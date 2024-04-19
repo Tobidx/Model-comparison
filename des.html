@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction - Data Showdown</title>
+    <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Container styles */
+        .container {
+            display: flex;
+        }
+
+        /* Navigation styles */
+        nav {
+            background-color: #333;
+            color: #fff;
+            width: 200px; /* Width of the navigation */
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin-bottom: 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            padding: 8px;
+            border-radius: 4px;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        /* Main content styles */
+        .main-content {
+            padding: 20px;
+        }
+
+        header {
+            background-color: #8ED1E9; 
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-bottom: 20px;
+        }
+
+        /* Table styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+            background-color: #fff; /* Ensure table cell background remains white */
+        }
+
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Comparing machine learning performance on Big Query, Azure and Python</h1>
+    </header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Intro</a></li>
+                <li><a href="des.html">Tools Used</a></li>
+                <li><a href="meth.html">Method</a></li>
+                <li><a href="res.html">Result</a></li>
+                 <!--<li><a href="cod.html">Codes</a></li>-->
+                <li><a href="con.html">Conclusion</a></li>
+                <li><a href="about.html">Contributors</a></li>
+            </ul>
+        </nav>
+        <div class="main-content">
+            <h2>Description of Tools Used</h2>
+            <!-- Content for the Description page goes here -->
+            <ol>
+                <li>
+                    <strong>Google Big Query:</strong>
+                    <p>Big Query is one of the major services from Google’s cloud platform. It is used to analyze large quantity of data. It is a platform as service (PaS) which uses queries just like we use in SQL. It has an interactive ad hoc query system which is also able to use functions of machine learning models. Another thing to mention is its compatibility with Google’s cloud ecosystem. There are two lairs in big query. One store and preprocess the data. Another one analyzes and gives output. These two layers work dynamically which increases the performance of the system.</p>
+                </li>
+                <li>
+                    <strong>Azure Machine Learning Studio:</strong>
+                    <p>Machine Learning Studio is a service that is offered by Azure platform. As the name suggests, it is used for machine learning purposes. But the unique thing about this service is that It uses a drag-and-drop of nodes. These nodes or should I say modules are part of the machine learning process. So technically, if you know the process behind building a model, you can pick the nodes you want, connect them sequentially like a diagram and let do the studio the back-end stuff. No knowledge of coding is needed in this process. But to get better performance we can customize the nodes within the studio or just use python.</p>
+                </li>
+                <li>
+                    <strong>Jupyter Notebook:</strong>
+                    <p>Jupyter Notebook is a open source computational environment that we can interact on the cloud, hosted on jypyterHub. It was built using open source libraries and mainly used for python applications. Most convenient part of using Jupyter is that we can use it on any browser. In the notebook it has cell like structures which is used for input and output of a code.</p>
+                </li>
+                <li>
+                    <strong>Amazon S3:</strong>
+                    <p>Within Amazon Web service ecosystem, they offer Amazon Simple Storage Service(S3). Just like we use google drive, Amazon S3 is used for cloud storage. But it is quite different. The data in S3 is organized into sets of buckets. These are assigned by the user from the console. Each of these buckets have their own IDs. Thus it can be only accessed by someone who has the ID.</p>
+                </li>
+                <li>
+                    <strong>GCS:</strong>
+                    <p>Google Cloud Storage (GCS) is a cloud storage service that is offered by Google Cloud Platform (GCP). This is not the same as google drive. GCS is part of the google ecosystem where we can store data and can only access through GCP. Unlike Amazon S3, GCS is a infrastructure as a service (iaas).</p>
+                </li>
+                <li>
+                    <strong>SageMaker:</strong>
+                    <p>SageMaker is a part of Amazon web service(AWS). It is a cloud-based platform which is used for machine learning purposes. Best practices are deploying it on embedded applications. It comes with pre-built in machine learning models. But if needed, anyone can make their own version of model from scratch. Best part of using Sagemaker is the integration with AWS. It is managed by web API’s using popular programming languages.</p>
+                </li>
+                <li>
+                    <strong>Vertex AI:</strong>
+                    <p>Vertex AI is part of google cloud platform. It is a tool that combines data engineering, ML engineering workflows. Major benefit of using this service is that you don’t really need to know coding. If you know the workflow then just select the instruction you need and vertex AI will manage it for you in the background. Strong implication of using this service is the integration of GCP.</p>
+                </li>
+                <li>
+                    <strong>Docker:</strong>
+                    <p>Docker is a tool that is used for deploying applications with Virtualization. It uses the docker engine which creates containers. The applications are virtualized in these containers, which are safe and lightweight to use. For specific applications this is a necessary step for development.</p>
+                </li>
+            </ol>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
