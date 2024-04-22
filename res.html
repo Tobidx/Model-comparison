@@ -145,13 +145,37 @@
                 <li><a href="des.html">Tools Used</a></li>
                 <li><a href="meth.html">Method</a></li>
                 <li><a href="res.html">Result</a></li>
-               <!-- <li><a href="cod.html">Codes</a></li>-->
+                <li><a href="cod.html">Codes</a></li>
                 <li><a href="con.html">Conclusion</a></li>
                 <li><a href="about.html">Contributors</a></li>
             </ul>
         </nav>
         <div class="main-content">
             <h2>Result Section</h2>
+            <ol>
+                <strong>Big Query(SQL):</strong>
+                <li>Linear Regression</li>
+                <img src="bigquery_linearregression_performance.png" alt="bq_Lin">
+                <li>XGBoost</li>
+                <img src="bigquery_XGBoost_performance.png" alt="bq_xg">
+        </ol>
+         <ol>
+                <strong>Azure Machine Learning Studio:</strong>
+                <li>Linear Regression</li>
+                <img src="azure_linearregression_performance.png" alt="az_lin">
+                <li>lightGBM</li>
+                <img src="azure_lightGBM_performance.png" alt="az_lig">
+
+        </ol>
+        <ol>
+            <strong>Python:</strong>
+            <li>Linear Regression</li>
+            <img src="python_linearregression_performance.jpg" alt="py_lin">
+            <li>XGBoost</li>
+            <img src="python_XGboost_performance.jpg" alt="py_xg">
+            <li>lightGBM</li>
+            <img src="python_lightGBM_performace.jpg" alt="py_lig">
+        </ol>
             <p>Linear regression on Big Query(SQL) achieved the highest R-squared value of 0.6648, followed by azure which achieved an R-squared value of 0.6639 . Python(scikit-learn) achieved the lowest r-squared of 0.6460 . 
                 XGboost on python achieved the highest r-squared value of 0.6559 while Big Query(SQL) achieved 0.5313 . Azure was unable to apply XGboost as it does not support the library.
                 lightGBM on python achieved the highest r-squared value of 0.6366 while Azure achieved an value of 0.6307 . Big Query was not able to produce any score of lightGBM as it does not support it natively.
